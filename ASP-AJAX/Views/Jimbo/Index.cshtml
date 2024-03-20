@@ -1,0 +1,23 @@
+﻿@model JimboModel
+
+<h1>Add Jimbo</h1>
+
+<form asp-controller="Jimbo" asp-action="Index" method="post">
+    <label asp-for="Name"></label>
+    <input asp-for="Name"/>
+    <div asp-validation-summary="All"></div>
+    
+    <label asp-for="Age"></label>
+    <input asp-for="Age"/>
+    <div asp-validation-summary="All"></div>
+    
+    <label asp-for="Hobbies"></label>
+    <select asp-for="Hobbies" asp-items="Html.GetEnumSelectList<Hobby>()"></select>
+    <div asp-validation-summary="All"></div>
+    
+    <label asp-for="IQ"></label>
+    <input asp-for="IQ"/>
+    <div asp-validation-summary="All"></div>
+    
+    <button type="submit">Submit</button>
+</form>
