@@ -9,20 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d710a1c-7f7a-49e6-a53f-35eccd6fae07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Controllers/JimboController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/JimboModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/Jimbo/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ASP-AJAX/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ASP-AJAX/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ASP-AJAX.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/ASP-AJAX.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ASP-AJAX.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/ASP-AJAX.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ASP-AJAX.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ASP-AJAX.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ASP-AJAX.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ASP-AJAX.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ASP-AJAX.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ASP-AJAX.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ASP-AJAX.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ASP-AJAX.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/ASP-AJAX.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/ASP-AJAX.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/ASP-AJAX.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/ASP-AJAX.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +30,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.ASP-AJAX: ASP_AJAX.executor": "Run",
+    ".NET Launch Settings Profile.ASP-AJAX: ASP_AJAX.executor": "Debug",
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -105,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710924680110</updated>
-      <workItem from="1710924681184" duration="9831000" />
+      <workItem from="1710924681184" duration="10238000" />
     </task>
     <servers />
   </component>
@@ -115,24 +103,5 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Controllers/HomeController.cs</url>
-          <line>23</line>
-          <properties documentPath="D:\Folders\Stuffs\Github Repositories\ASP-Various-Tests\ASP-AJAX\Controllers\HomeController.cs" initialLine="23" containingFunctionPresentation="Method 'Index'">
-            <startOffsets>
-              <option value="474" />
-            </startOffsets>
-            <endOffsets>
-              <option value="492" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -21,7 +21,7 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Index([FromBody] TestDataModel data)
     {
-        return Json(data);
+        return Json(JimboModel.Jimbos);
     }
 
     public IActionResult Privacy()

@@ -1,11 +1,7 @@
-﻿@using System.Text.Json
+﻿@model List<JimboModel>
+
 @{
     ViewData["Title"] = "Home Page";
-    var jimbos = JimboModel.Jimbos;
-    var jimboNames = jimbos.Select(j => j.Name).ToArray();
-    var jimboIQs = jimbos.Select(j => j.IQ).ToArray();
-    var jimboNameStrings = Html.Raw(JsonSerializer.Serialize(jimboNames));
-    var jimboIqStrings = Html.Raw(JsonSerializer.Serialize(jimboIQs));
 }
 
 <div class="text-center">
@@ -19,6 +15,7 @@
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
     <script>
+        // This POST is utterly useless but all of this is for training anyway so idgaf
         function sendTestData() {
             $.ajax({
                 url: '/Home/Index/',
@@ -26,17 +23,17 @@
                 contentType: 'application/json',
                 data: JSON.stringify({ 'first': 5, 'numberOne': 123, 'message': 'Hello World', 'surplus': 'This is a surplus' }),
                 success: function (data) {
-                    console.log('success');
+                    console.log('success. Jimbos:');
                     console.log(data);
                     
                     const ctx = document.getElementById('myChart');
                     new Chart(ctx, {
                         type: 'bar',
                         data: {
-                            labels: @(jimboNameStrings),
+                            labels: data.map(j => j.name),
                             datasets: [{
                                 label: 'IQ',
-                                data: @(jimboIqStrings),
+                                data: data.map(j => j.iq),
                                 backgroundColor: [
                                     'rgba(255, 99, 132, 0.2)',
                                     'rgba(54, 162, 235, 0.2)',
