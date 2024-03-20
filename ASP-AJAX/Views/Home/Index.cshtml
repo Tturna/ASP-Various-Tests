@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    
+    <button onclick="sendTestData()">Send Test Data</button>
+</div>
+
+@section Scripts {
+    <script>
+        function sendTestData() {
+            $.ajax({
+                url: '/Home/Index/',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ 'first': 5, 'numberOne': 123, 'message': 'Hello World', 'surplus': 'This is a surplus' }),
+                success: function (data) {
+                    console.log('success');
+                    console.log(data);
+                },
+                error: function (data) {
+                    console.log('error');
+                    console.log(data);
+                }
+            });
+        }
+    </script>
+}
+```
